@@ -21,22 +21,24 @@ public class BookController {
     }
 
     @GetMapping
-    public List<Book> getAllUsers() {
+    public List<Book> getAll() {
         return bookService.getAll();
     }
 
-    @GetMapping
-    public Optional<Book> findById(String id) {
+   @GetMapping("/{id}")
+    public Optional<Book> findById(@PathVariable String id) {
         return bookService.findById(id);
     }
+
+
     @PostMapping
-    public ResponseEntity<Book> createUser(@RequestBody Book book) {
+    public ResponseEntity<Book> save(@RequestBody Book book) {
         bookService.save(book);
         return ResponseEntity.status(HttpStatus.CREATED).body(book);
     }
 
-    @DeleteMapping
-    public void deleteById(String id) {
+    @DeleteMapping("/{id}")
+    public void deleteById(@PathVariable String id) {
         bookService.deleteById(id);
     }
 }

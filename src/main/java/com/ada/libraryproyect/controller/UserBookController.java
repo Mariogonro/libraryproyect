@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/api/books")
+@RequestMapping("/api/userbooks")
 public class UserBookController {
     private final UserBookService userBookService;
 
@@ -26,8 +26,8 @@ public class UserBookController {
         return userBookService.getAll();
     }
 
-    @GetMapping
-    public Optional<UserBook> findById(String id) {
+    @GetMapping("/id")
+    public Optional<UserBook> findById(@PathVariable String id) {
         return userBookService.findById(id);
     }
     @PostMapping
@@ -36,8 +36,8 @@ public class UserBookController {
         return ResponseEntity.status(HttpStatus.CREATED).body(userBook);
     }
 
-    @DeleteMapping
-    public void deleteById(String id) {
+    @DeleteMapping("/id")
+    public void deleteById(@PathVariable String id) {
         userBookService.deleteById(id);
     }
 }

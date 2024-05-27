@@ -2,12 +2,13 @@ package com.ada.libraryproyect.service.impl;
 
 import com.ada.libraryproyect.repository.UserRepository;
 import com.ada.libraryproyect.repository.entity.User;
+import com.ada.libraryproyect.service.IUserService;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Component
-public class UserService implements com.ada.libraryproyect.service.UserService {
+public class UserService implements IUserService {
     private final UserRepository userRepository;
 
     public UserService(UserRepository userRepository) {

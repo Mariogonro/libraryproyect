@@ -2,12 +2,13 @@ package com.ada.libraryproyect.service.impl;
 
 import com.ada.libraryproyect.repository.RoleRepository;
 import com.ada.libraryproyect.repository.entity.Role;
+import com.ada.libraryproyect.service.IRoleService;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @Component
-public class RoleService implements com.ada.libraryproyect.service.RoleService {
+public class RoleService implements IRoleService {
 
     private final RoleRepository roleRepository;
 

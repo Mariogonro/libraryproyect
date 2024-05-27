@@ -15,18 +15,16 @@ import java.util.Set;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 @Document(collection = "users_books")
 public class UserBook {
     @Id
     private String id;
     @DBRef
 
-    @Builder.Default
+
     private Set<User> users = new HashSet<>();
 
     @DBRef
-    @Builder.Default
     private Set<Book> books = new HashSet<>();
 
     private EStatus status;

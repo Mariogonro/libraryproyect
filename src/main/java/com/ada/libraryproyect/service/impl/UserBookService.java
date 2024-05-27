@@ -2,13 +2,14 @@ package com.ada.libraryproyect.service.impl;
 
 import com.ada.libraryproyect.repository.UserBookRepository;
 import com.ada.libraryproyect.repository.entity.UserBook;
+import com.ada.libraryproyect.service.IUserBookService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserBookService {
+public class UserBookService implements IUserBookService {
     private final UserBookRepository userBookRepository;
 
     public UserBookService(UserBookRepository userBookRepository) {

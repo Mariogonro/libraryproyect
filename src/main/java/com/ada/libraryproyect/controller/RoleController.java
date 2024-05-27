@@ -1,7 +1,7 @@
 package com.ada.libraryproyect.controller;
 
 import com.ada.libraryproyect.repository.entity.Role;
-import com.ada.libraryproyect.service.RoleService;
+import com.ada.libraryproyect.service.IRoleService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,9 +12,9 @@ import java.util.List;
 @RequestMapping("/api/roles")
 public class RoleController {
 
-    private final RoleService roleService;
+    private final IRoleService roleService;
 
-    public RoleController(RoleService roleService) {
+    public RoleController(IRoleService roleService) {
         this.roleService = roleService;
     }
 

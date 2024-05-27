@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public interface UserService {
+public interface IUserService {
 
     List<User> getAllUsers();
     boolean existsByUsername(String username);
