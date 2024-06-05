@@ -22,7 +22,7 @@ public class UserBookController {
 
 
     @GetMapping
-    public List<UserBook> getAllUsers() {
+    public List<UserBook> getAllUserBooks() {
         return userBookService.getAll();
     }
 
@@ -31,7 +31,7 @@ public class UserBookController {
         return userBookService.findById(id);
     }
     @PostMapping
-    public ResponseEntity<UserBook> createUser(@RequestBody UserBook userBook) {
+    public ResponseEntity<UserBook> createUserBook(@RequestBody UserBook userBook) {
         userBookService.save(userBook);
         return ResponseEntity.status(HttpStatus.CREATED).body(userBook);
     }

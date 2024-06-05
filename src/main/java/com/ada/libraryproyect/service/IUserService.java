@@ -13,5 +13,6 @@ public interface IUserService {
     boolean existsByUsername(String username);
     boolean existsByEmail(String email);
     void save(User user);
+    User update (String id,User user);
 
 }

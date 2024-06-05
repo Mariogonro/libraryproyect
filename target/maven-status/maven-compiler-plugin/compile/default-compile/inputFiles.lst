@@ -20,12 +20,15 @@ D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\lib
 D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\repository\BookRepository.java
 D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\repository\entity\Book.java
 D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\repository\entity\Role.java
+D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\repository\entity\Status.java
 D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\repository\entity\User.java
 D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\repository\entity\UserBook.java
 D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\repository\entity\UserDetailsImpl.java
 D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\repository\factory\RoleDataSeeder.java
 D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\repository\factory\RoleFactory.java
+D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\repository\factory\StatusFactory.java
 D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\repository\RoleRepository.java
+D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\repository\StatusRepository.java
 D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\repository\UserBookRepository.java
 D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\repository\UserRepository.java
 D:\Usuario\Mario\Cursos\Java\Spring Boot\Final\library\src\main\java\com\ada\libraryproyect\service\AuthService.java

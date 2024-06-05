@@ -19,9 +19,8 @@ import java.util.Set;
 public class UserBook {
     @Id
     private String id;
+
     @DBRef
-
-
     private Set<User> users = new HashSet<>();
 
     @DBRef

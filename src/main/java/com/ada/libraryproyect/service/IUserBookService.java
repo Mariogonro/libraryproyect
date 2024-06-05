@@ -1,5 +1,6 @@
 package com.ada.libraryproyect.service;
 
+import com.ada.libraryproyect.repository.UserBookRepository;
 import com.ada.libraryproyect.repository.entity.UserBook;
 
 import java.util.List;
@@ -9,5 +10,6 @@ public interface IUserBookService {
     List<UserBook> getAll();
     Optional<UserBook> findById(String id);
     void deleteById(String id);
-    void save(UserBook book);
+    void save(UserBook userBook);
+    UserBook update(String id, UserBook userBook);
 }

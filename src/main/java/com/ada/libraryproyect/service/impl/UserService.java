@@ -2,6 +2,7 @@ package com.ada.libraryproyect.service.impl;
 
 import com.ada.libraryproyect.repository.UserRepository;
 import com.ada.libraryproyect.repository.entity.User;
+import com.ada.libraryproyect.repository.entity.UserBook;
 import com.ada.libraryproyect.service.IUserService;
 import org.springframework.stereotype.Component;
 
@@ -33,5 +34,14 @@ public class UserService implements IUserService {
     @Override
     public void save(User user) {
         userRepository.save(user);
+    }
+
+    @Override
+    public User update(String id, User user){
+        if (userRepository.existsById(id)){
+            return userRepository.save(user);
+        } else {
+            throw new RuntimeException("UserBook not found");
+        }
     }
 }
